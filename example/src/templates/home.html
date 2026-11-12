@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>marten-lucide example</title>
+    <style>
+      body { font: 18px/1.5 system-ui, sans-serif; margin: 2rem; }
+      .lucide { vertical-align: -0.125em; }
+    </style>
+  </head>
+  <body>
+    <h1>{% lucide "sparkles" size: "1em" %} marten-lucide</h1>
+
+    <p>Decorative, next to text: {% lucide "search" size: 20 %} Search</p>
+
+    <p>Meaningful on its own: {% lucide "triangle-alert" aria_label: "Warning" color: "#b45309" %}</p>
+
+    <button type="button" aria-label="Settings">{% lucide "settings" stroke_width: 1.5 %}</button>
+
+    <p>Names from a variable:
+      {% for name in icons %}{% lucide name size: 24 class: "demo" data_icon: name %}{% endfor %}
+    </p>
+
+    <p>Deprecated alias "home" renders "house": {% lucide "home" %}</p>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.DS_Store
+.ideas/
+.vscode/
+/bin/
+/lib/
+/.shards/
+/coverage/
+*.dwarf
+.icr_*
+*.db
+/shard.lock
+/example/bin/
+/example/lib/
+/example/shard.lock

@@ -1,0 +1,12 @@
+name: marten_lucide_example
+version: 0.1.0
+
+dependencies:
+  marten:
+    github: martenframework/marten
+  marten_lucide:
+    path: ..
+
+targets:
+  server:
+    main: src/server.cr
